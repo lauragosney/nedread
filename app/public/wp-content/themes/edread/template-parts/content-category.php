@@ -4,14 +4,12 @@
   <a href="<?php the_permalink(); ?>" class="db">
 
     <div class="overlay">
-      <div class="overlay-text">
-        <h2 class="tc ph3 white"><?php the_title(); ?></h2>
-        <p class="tc ph3 white mt3">– view project –</h2>
+      <div class="overlay-text tc ph3">
+        <h2 class="white"><?php the_title(); ?></h2>
+        <p class="white mt3">– view project –</p>
       </div>
     </div>
-      <div class="vh-50 cover bg-center" style="<?php if( get_field('hero_image')): ?>
-        background-image: url(<?php the_field('hero_image'); ?>);
-        <?php endif; ?>">
+      <div class="cat-image cover bg-center" style="<?php nice_background('hero_image'); ?>">
       </div>
   </a>
 </article>

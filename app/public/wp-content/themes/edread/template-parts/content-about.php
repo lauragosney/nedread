@@ -2,18 +2,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class("about"); ?>>
 
 
-	<div class="entry-content w-60 pr4">
-    <header class="entry-header">
-  		<?php
-  		if ( is_singular() ) :
-  			the_title( '<h2 class="entry-title">', '</h2>' );
-  		else :
-  			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-  		endif;
+	<div class="entry-content mb4 measure-wide">
+    <header class="entry-header mb4">
 
-  		if ( 'post' === get_post_type() ) :
-  			?>
-  		<?php endif; ?>
   	</header><!-- .entry-header -->
 
 		<?php
@@ -37,8 +28,9 @@
 		?>
 	</div><!-- .entry-content -->
 
-  <div class="w-40 profile">
-    <?php edread_post_thumbnail(); ?>
-  </div>
+
+	<div class="w-100 profile">
+		<?php edread_post_thumbnail(); ?>
+	</div>
 
 </article><!-- #post-<?php the_ID(); ?> -->

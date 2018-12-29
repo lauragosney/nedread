@@ -27,27 +27,30 @@ a {
 }
 
 a:hover {
-  color: #999999;
-  border-bottom: solid 1px #999999;
+  color: rgba(255, 65, 65, 0.92);;
+  border-bottom: solid 1px rgba(255, 65, 65, 0.92);;
 }
 
 a:focus {
-  color: #666666;
+  color: rgba(255, 65, 65, 0.92);
 }
 
 a:visited {
   color: none;
 }
 
-a.logo  {
+a.logo,
+a.insta-headline  {
   color: #000000;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
   border-bottom: none;
   margin-right: 3rem;
 }
 
+
+a.insta-headline h2:hover,
 a.logo:hover  {
-  color: #999999;
+  color: rgba(255, 65, 65, 0.92);;
   transition: all 0.5s;
 }
 
@@ -55,23 +58,35 @@ a.logo:hover  {
   border-bottom: none;
 }
 
+.single-post .main-menu .menu-item a,
+.home .main-menu .menu-item a,
 .page-template .main-menu .menu-item a,
 .archive .main-menu .menu-item a,
 .main-menu:hover .menu-item a {
-  opacity: 0.25;
+  color: #000000;
+  opacity: 1;
+  transition: all 0.5s;
+  border-bottom: solid 1px transparent;
 }
 
+.single-post .main-menu .menu-item.menu-item-19 a,
+.home .main-menu .menu-item.menu-item-19 a,
 .main-menu .menu-item.current-menu-item a,
 .main-menu .menu-item:hover a {
+  color: rgba(255, 65, 65, 0.92);
   opacity: 1;
-  border-bottom: solid 1px #000000;
+  border-bottom: solid 1px rgba(255, 65, 65, 0.92);;
+  transition: all 0.5s;
 }
-
 
 /* .image-links a:hover {
     opacity: 0.5;
     background-color: rgba(15,15,15,.7);
 } */
+
+.logo {
+  letter-spacing: 2px;
+}
 
 .overlay {
     position: absolute;
@@ -83,6 +98,7 @@ a.logo:hover  {
     opacity: 0;
     transition: all 0.3s;
     background-color: rgba(255, 65, 65, 0.92);
+    z-index: 200;
 }
 
 .overlay-text {
@@ -96,9 +112,15 @@ a.logo:hover  {
 
 .hero-image {
   max-width: 33%;
+  height: 33%;
 }
 
-.hero-image:hover .overlay {
+.cat-image {
+  height: 450px;
+}
+
+.hero-image:hover .overlay,
+.rel-image:hover .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -162,12 +184,87 @@ li {
   padding: 0;
 }
 
-/* .wp-post-image {
-  max-width: 100%;
+.insta-pic img,
+.gallery-image img {
   width: auto !important;
   height: auto !important;
   display: block;
-} */
+}
+
+.caption {
+  max-width: 870px;
+}
+
+
+.insta-pic {
+  width: 33%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.insta-pic a:hover {
+  border-bottom: none;
+}
+
+.insta-pic:hover .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 	opacity: 1;
+  cursor: pointer;
+  }
+
+.overlay .caption {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+ 	left: 0%;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.likes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.heart {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  margin-right: 7px;
+}
+
+.profile img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+.contact a {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.contact h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.rel a {
+  border-bottom: none;
+}
 
 @media (max-width: 1100px) {
 
