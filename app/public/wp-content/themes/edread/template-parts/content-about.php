@@ -1,5 +1,5 @@
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("about"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("about fade"); ?>>
 
 
 	<div class="entry-content mb4 measure-wide">

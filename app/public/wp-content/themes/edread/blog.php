@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages
- * Template Name: About Page
+ * Template Name: Blog Page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -16,28 +16,21 @@
 get_header();
 ?>
 <div id="primary" class="content-area">
-  <main id="main" class="site-main mb6-l mb5">
+  <main id="main" class="site-main mb6-l mb5 wide">
+    <?php
 
-  <?php
-  while ( have_posts() ) :
-    the_post();
+    $args = array(
+      'tag' => 'blog',
+    );
 
-    get_template_part( 'template-parts/content-about');
-
-    // If comments are open or we have at least one comment, load up the comment template.
-    if ( comments_open() || get_comments_number() ) :
-      comments_template();
-    endif;
-
-  endwhile; // End of the loop.
-  ?>
-
+    $query = new WP_Query( $args );
+    if ($query->have_posts()): while ($query->have_posts()): $query->the_post(); ?>
+      <?php get_template_part( 'template-parts/content-blog'); ?>
+    <?php endwhile; endif; ?>
   </main><!-- #main -->
 </div><!-- #primary -->
 
 <?php get_template_part( 'template-parts/content-instagram'); ?>
-
-</div>
 
 <?php
 get_footer();

@@ -23,11 +23,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'edread' ); ?></a>
 
-	<header id="masthead" class="site-header mb4">
-		<?php get_template_part('template-parts/content-navigation'); ?>
-	</header><!-- #masthead -->
+<div id="barba-wrapper">
+	<div id="page" class="barba-container relative">
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'edread' ); ?></a>
 
-	<div id="content" class="site-content">
+		<header id="masthead" class="site-header mb4">
+			<?php get_template_part('template-parts/content-navigation'); ?>
+		</header><!-- #masthead -->
+
+		<div id="content" class="site-content">

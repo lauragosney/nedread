@@ -1,9 +1,9 @@
-<div class="flex flex-wrap center">
+<div class="flex flex-wrap center mb5 fade">
   <?php $images = get_sub_field('gallery'); ?>
   <?php foreach($images as $image) : ?>
 
 
-    <div class="gallery-image ph2 mb6 <?php the_field('image_width', $image['id']); ?>">
+    <div class="gallery-image mb2 justify-between ph1 <?php the_field('image_width', $image['id']); ?>">
       <?php echo wp_get_attachment_image($image['id'], 'full'); ?>
 
       <!-- here we assign our caption to a variable called $caption -->

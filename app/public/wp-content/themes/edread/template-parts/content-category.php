@@ -1,8 +1,5 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class("hero-image image-links relative w-db link w-100 mb2-ns"); ?>>
-
-
+<article id="post-<?php the_ID(); ?>" <?php post_class("hero-image image-links fade relative w-db link w-100 mb2"); ?>>
   <a href="<?php the_permalink(); ?>" class="db">
-
     <div class="overlay">
       <div class="overlay-text tc ph3">
         <h2 class="white"><?php the_title(); ?></h2>

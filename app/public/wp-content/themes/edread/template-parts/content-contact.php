@@ -1,8 +1,8 @@
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("contact"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("contact fade"); ?>>
 
 
-	<div class="entry-content w-60 pr4">
+	<div class="entry-content w-60-ns w-100 pr4">
     <header class="entry-header">
   	</header><!-- .entry-header -->
 
@@ -27,8 +27,10 @@
 		?>
 	</div><!-- .entry-content -->
 
-  <div class="w-40 profile">
+  <div class="w-100 profile">
     <?php edread_post_thumbnail(); ?>
   </div>
+
+
 
 </article><!-- #post-<?php the_ID(); ?> -->

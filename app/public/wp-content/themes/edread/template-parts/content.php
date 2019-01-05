@@ -9,10 +9,10 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("fade"); ?>>
 
-	<div class="entry-content">
-		<div class="intro flex flex-wrap justify-between mb4">
+	<div class="entry-content mb5 mb6-ns">
+		<div class="intro flex-l flex-wrap-l justify-between mb4">
 				<h2><?php the_title(); ?><h2>
 
 				<?php if( get_field('subhead') ): ?>
@@ -20,7 +20,7 @@
 				<?php endif; ?>
 		</div>
 
-		<div class="hero mb6 vh-100-ns bg-center cover" style="<?php if(get_field('hero_image') ): ?>
+		<div class="hero mb4-l mb3 vh-100-ns vh-50 bg-center cover" style="<?php if(get_field('hero_image') ): ?>
 			background-image: url(<?php the_field('hero_image'); ?>);
 		<?php endif; ?>">
 	</div>
@@ -49,7 +49,7 @@
 
 	</div><!-- .entry-content -->
 
-	<div class="mb6">
+	<div class="mb5">
 		<?php get_template_part('template-parts/content-explore'); ?>
 	</div>
 

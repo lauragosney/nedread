@@ -1,5 +1,5 @@
-<section class="rel">
-  <h2 class="mb4">Some recent projects you might like...</h2>
+<div class="rel fade">
+  <h2 class="mb4-l mb3 bold tc">Featured</h2>
 
 
 
@@ -8,6 +8,7 @@
     <?php
 
     $args = array(
+      'category_name' => 'work',
       'posts_per_page' => 3,
       'orderby' => 'rand',
       'post__not_in' => array($post->ID)
@@ -17,7 +18,7 @@
 
     if ($query->have_posts()): while ($query->have_posts()): $query->the_post(); ?>
 
-    <a href="<?php the_permalink(); ?>" class="relative rel-image db link w-third-ns w-100 ph1">
+    <a href="<?php the_permalink(); ?>" class="relative rel-image db link w-100 mb2 mb0-ns">
 
       <div class="overlay">
         <div class="overlay-text tc ph3">
@@ -36,4 +37,4 @@
 
   </div>
 
-</section>
+</div>

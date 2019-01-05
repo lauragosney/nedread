@@ -12,6 +12,7 @@ h2 {
   color: #000000;
   margin: 0;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -39,3 +40,9 @@ p {
   font-size: 1rem;
   font-weight: 300;
 }
+
+@media (max-width: 680px) {
+
+  h2 {
+    font-size: 1.5rem;
+  }

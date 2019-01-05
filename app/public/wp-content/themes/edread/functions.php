@@ -129,12 +129,16 @@ function edread_scripts() {
 
 	wp_enqueue_style( 'edread-custom', get_template_directory_uri() . '/css/custom.css');
 
-	wp_enqueue_script( 'edread-main', get_template_directory_uri() . '/js/instafeed.js' );
+	wp_enqueue_script( 'edread-instafeed', get_template_directory_uri() . '/js/instafeed.js' );
 
-	wp_enqueue_script( 'edread-main', get_template_directory_uri() . '/js/instafeed.min.js' );
+	wp_enqueue_script( 'edread-instafeed.min', get_template_directory_uri() . '/js/instafeed.min.js' );
 
-	wp_enqueue_script( 'edread-main', get_template_directory_uri() . '/js/main.js' );
+	wp_enqueue_script( 'edread-inview', get_template_directory_uri() . '/js/in-view.js');
 
+	wp_enqueue_script( 'edread-barba', get_template_directory_uri() . '/js/barba.js');
+
+	wp_enqueue_script( 'edread-main', get_template_directory_uri() . '
+	/js/main.js', array('jquery'), '1.0.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'edread_scripts' );
 
