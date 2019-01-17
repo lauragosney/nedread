@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main flex flex-wrap mb5 justify-between">
+		<main id="main" class="site-main mb5 mh1-ns grid">
 			<?php
 
 			$args = array(
@@ -26,7 +26,9 @@ get_header();
 	    $query = new WP_Query( $args );
 
 	    if ($query->have_posts()): while ($query->have_posts()): $query->the_post(); ?>
-				<?php get_template_part( 'template-parts/content-category'); ?>
+
+				<?php get_template_part('template-parts/content-category'); ?>
+
 			<?php endwhile; endif; ?>
 
 		</main><!-- #main -->

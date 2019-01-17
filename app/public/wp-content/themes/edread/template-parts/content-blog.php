@@ -9,10 +9,10 @@
 
     <h2 class="mb4"><?php the_title(); ?></h2>
 
-    <div class="hero vh-100-ns vh-50 bg-center cover mb4" style="<?php if(get_field('hero_image') ): ?>
-      background-image: url(<?php the_field('hero_image'); ?>);
-      <?php endif; ?>">
-    </div>
+
+    <div class="w-100 profile mb4">
+  		<?php edread_post_thumbnail(); ?>
+  	</div>
 
   <?php if( have_rows('content') ): while ( have_rows('content')) : the_row();
       if ( get_row_layout() == 'text_block' ): ?>

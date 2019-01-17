@@ -135,10 +135,7 @@ function edread_scripts() {
 
 	wp_enqueue_script( 'edread-inview', get_template_directory_uri() . '/js/in-view.js');
 
-	wp_enqueue_script( 'edread-barba', get_template_directory_uri() . '/js/barba.js');
-
-	wp_enqueue_script( 'edread-main', get_template_directory_uri() . '
-	/js/main.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script( 'edread-main', get_template_directory_uri() . '/js/main.js' );
 }
 add_action( 'wp_enqueue_scripts', 'edread_scripts' );
 

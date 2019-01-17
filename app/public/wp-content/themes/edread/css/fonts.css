@@ -11,7 +11,7 @@ h2 {
   line-height: 1.2;
   color: #000000;
   margin: 0;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
@@ -39,6 +39,10 @@ p {
   font-family: 'Archivo', sans-serif;
   font-size: 1rem;
   font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 @media (max-width: 680px) {

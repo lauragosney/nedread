@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-		<footer id="colophon" class="site-footer">
+		<footer id="colophon" class="site-footer mh1-ns mh2">
 
 
 			<h5>Copyright © 2017</h5>
@@ -28,7 +28,6 @@
 
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
-</div>
 
 <?php wp_footer(); ?>
 

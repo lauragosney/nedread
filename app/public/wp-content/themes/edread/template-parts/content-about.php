@@ -1,11 +1,8 @@
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("about fade"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("about fade flex-wrap flex"); ?>>
 
 
-	<div class="entry-content mb4 measure-wide">
-    <header class="entry-header mb4">
-
-  	</header><!-- .entry-header -->
+	<div class="entry-content mb4 w-50-l full-width pr5-l">
 
 		<?php
 		the_content( sprintf(
@@ -29,7 +26,7 @@
 	</div><!-- .entry-content -->
 
 
-	<div class="w-100 profile">
+	<div class="w-50-l full-width mb4 profile">
 		<?php edread_post_thumbnail(); ?>
 	</div>
 

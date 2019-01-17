@@ -153,3 +153,35 @@ Stack trace:
 #8 {main}
   thrown in /app/public/wp-includes/media.php on line 871
 [30-Dec-2018 17:49:21 UTC] PHP Parse error:  syntax error, unexpected '=' in /app/public/wp-content/themes/edread/index.php on line 22
+[16-Jan-2019 16:30:08 UTC] PHP Parse error:  syntax error, unexpected 'entry' (T_STRING), expecting ',' or ')' in /app/public/wp-content/themes/edread/template-parts/content-about.php on line 5
+[16-Jan-2019 17:59:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/edread/template-parts/content-gallery.php on line 3
+[16-Jan-2019 17:59:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/edread/template-parts/content-gallery.php on line 3
+[16-Jan-2019 18:01:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/edread/template-parts/content-gallery.php on line 3
+[16-Jan-2019 18:48:34 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /app/public/wp-content/themes/edread/index.php on line 53
+[16-Jan-2019 20:18:59 UTC] PHP Warning:  simplexml_load_file(http://ned-read.local/wp-content/uploads/2018/12/heart_white.svg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[16-Jan-2019 20:18:59 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity "http://ned-read.local/wp-content/uploads/2018/12/heart_white.svg" in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[16-Jan-2019 20:20:02 UTC] PHP Warning:  simplexml_load_file(http://ned-read.local/wp-content/uploads/2018/12/heart_white.svg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[16-Jan-2019 20:20:02 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity "http://ned-read.local/wp-content/uploads/2018/12/heart_white.svg" in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[16-Jan-2019 20:23:21 UTC] PHP Warning:  simplexml_load_file(http://ned-read.local/wp-content/uploads/2018/12/heart_white.svg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[16-Jan-2019 20:23:21 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity "http://ned-read.local/wp-content/uploads/2018/12/heart_white.svg" in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[16-Jan-2019 20:26:47 UTC] PHP Warning:  simplexml_load_file(http://ned-read.local/wp-content/uploads/2018/12/heart_white.svg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[16-Jan-2019 20:26:47 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity "http://ned-read.local/wp-content/uploads/2018/12/heart_white.svg" in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[17-Jan-2019 13:44:33 UTC] PHP Warning:  simplexml_load_file(http://ned-read.local/wp-content/uploads/2019/01/heart_white.svg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[17-Jan-2019 13:44:33 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity "http://ned-read.local/wp-content/uploads/2019/01/heart_white.svg" in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[17-Jan-2019 14:11:19 UTC] PHP Warning:  simplexml_load_file(http://ned-read.local/wp-content/uploads/2019/01/heart_white.svg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[17-Jan-2019 14:11:19 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity "http://ned-read.local/wp-content/uploads/2019/01/heart_white.svg" in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[17-Jan-2019 17:03:44 UTC] PHP Warning:  simplexml_load_file(http://ned-read.local/wp-content/uploads/2019/01/heart_white.svg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[17-Jan-2019 17:03:44 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity "http://ned-read.local/wp-content/uploads/2019/01/heart_white.svg" in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[17-Jan-2019 17:21:17 UTC] PHP Warning:  simplexml_load_file(http://ned-read.local/wp-content/uploads/2019/01/heart_white.svg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[17-Jan-2019 17:21:17 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity "http://ned-read.local/wp-content/uploads/2019/01/heart_white.svg" in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[17-Jan-2019 17:32:27 UTC] PHP Warning:  simplexml_load_file(http://ned-read.local/wp-content/uploads/2019/01/heart_white.svg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40
+[17-Jan-2019 17:32:27 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity "http://ned-read.local/wp-content/uploads/2019/01/heart_white.svg" in /app/public/wp-content/plugins/svg-support/functions/attachment-modal.php on line 40

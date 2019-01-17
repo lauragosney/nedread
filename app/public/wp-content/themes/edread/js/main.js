@@ -74,15 +74,8 @@
 // jsStuff()
 
 document.addEventListener('DOMContentLoaded', () => {
-
   inView('.fade')
-    .on('enter', article => article.classList.add('visible'))
-    .on('exit', article => article.classList.remove('visible'))
+    .on('enter', el => el.classList.add('visible'))
+    .on('exit', el => el.classList.remove('visible'))
     inView.threshold(0.2)
-
-  inView('div.fade')
-    .on('enter', div => div.classList.add('visible'))
-    .on('exit', div => div.classList.remove('visible'))
-    inView.threshold(0.2)
-
 })

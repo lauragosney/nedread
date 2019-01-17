@@ -1,4 +1,4 @@
-<div class="rel fade">
+<div class="rel">
   <h2 class="mb4-l mb3 bold tc">Featured</h2>
 
 
@@ -18,7 +18,7 @@
 
     if ($query->have_posts()): while ($query->have_posts()): $query->the_post(); ?>
 
-    <a href="<?php the_permalink(); ?>" class="relative rel-image db link w-100 mb2 mb0-ns">
+    <a href="<?php the_permalink(); ?>" class="relative feature-image db link w-100 mb2 mb0-ns">
 
       <div class="overlay">
         <div class="overlay-text tc ph3">

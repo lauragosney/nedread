@@ -9,21 +9,23 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("fade"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="entry-content mb5 mb6-ns">
+	<div class="entry-content mb5 mb6-ns ph1-ns fade">
 		<div class="intro flex-l flex-wrap-l justify-between mb4">
 				<h2><?php the_title(); ?><h2>
 
 				<?php if( get_field('subhead') ): ?>
-					 <h3><?php the_field('subhead'); ?></h3>
+					 <h3 class="measure-wide-subhead"><?php the_field('subhead'); ?></h3>
 				<?php endif; ?>
 		</div>
 
-		<div class="hero mb4-l mb3 vh-100-ns vh-50 bg-center cover" style="<?php if(get_field('hero_image') ): ?>
-			background-image: url(<?php the_field('hero_image'); ?>);
-		<?php endif; ?>">
-	</div>
+		<div class="w-100 profile mb2 ph1-ns">
+			<?php edread_post_thumbnail(); ?>
+		</div>
+
+
+
 
 		<div>
 			<!-- if we have some flexible content, let’s loop through it -->
@@ -49,7 +51,7 @@
 
 	</div><!-- .entry-content -->
 
-	<div class="mb5">
+	<div class="mb5 fade">
 		<?php get_template_part('template-parts/content-explore'); ?>
 	</div>
 

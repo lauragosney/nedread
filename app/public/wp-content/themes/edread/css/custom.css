@@ -4,10 +4,13 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
     color: #000000;
-    margin: 0.5rem auto;
-    max-width: 1400px;
-    padding: 0.5rem;
+    padding: 1rem;
     -webkit-font-smoothing: antialiased;
+}
+
+.site-content {
+  max-width: 150rem;
+  margin: 7rem auto 0rem auto;
 }
 
 * {
@@ -29,14 +32,6 @@ a:hover {
   color: rgba(255, 65, 65, 0.92);;
   border-bottom: solid 1px rgba(255, 65, 65, 0.92);
   transition: all 0.5s ease-in-out;
-}
-
-a:focus {
-  color: rgba(255, 65, 65, 0.92);
-}
-
-a:visited {
-  color: none;
 }
 
 a.logo {
@@ -81,7 +76,7 @@ h2.insta-headline:hover  {
   transition: all 0.5s;
 }
 
-.logo {
+.logo h1 {
   letter-spacing: 2px;
 }
 
@@ -104,20 +99,18 @@ h2.insta-headline:hover  {
   left: 0;
   transform: translateY(-50%);
   width: 100%;
-  padding:20px;
 }
 
-.hero-image,
 .rel-image {
+  max-width: 100%;
+}
+
+.feature-image {
   max-width: 33%;
   height: 33%;
 }
 
-.cat-image {
-  height: 450px;
-}
-
-.hero-image:hover .overlay,
+.feature-image:hover .overlay,
 .rel-image:hover .overlay {
   position: absolute;
   bottom: 0;
@@ -145,9 +138,14 @@ li {
   padding: 0;
 }
 
+header {
+  z-index: 500;
+  background-color: rgba(255,255,255,.9);
+}
+
 .main-navigation {
   list-style: none;
-  padding: 0;
+  padding: 1rem;
 }
 
 .menu-item {
@@ -182,6 +180,18 @@ li {
   padding: 0;
 }
 
+.insta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .5rem;
+}
+
 .insta-pic img,
 .gallery-image img {
   width: auto !important;
@@ -189,12 +199,7 @@ li {
   display: block;
 }
 
-.caption {
-  max-width: 800px;
-}
-
 .insta-pic {
-  width: 33%;
   position: relative;
   overflow: hidden;
 }
@@ -220,7 +225,7 @@ li {
  	left: 0%;
   text-align: center;
   width: 100%;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .likes {
@@ -228,7 +233,7 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .heart {
@@ -236,9 +241,9 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   background-repeat: no-repeat;
-  height: 24px;
-  width: 24px;
-  margin-right: 7px;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: .5rem;
 }
 
 .profile img {
@@ -247,33 +252,28 @@ li {
   display: block;
 }
 
-.contact a {
-  font-size: 2rem;
-  line-height: 1.2;
+.about a  {
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
-.contact h2 {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.contact a {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 600;
 }
 
-.bold {
-  font-weight: 700;
+.contact h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .rel a {
   border-bottom: none;
 }
 
-.wide {
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 img.emoji {
-    width: 15px! important;
+    width: 1rem! important;
   }
 
 .fade {
@@ -285,47 +285,97 @@ img.emoji {
   opacity: 1;
 }
 
+.measure-wide-subhead {
+  max-width: 32rem;
+}
+
+.wide {
+  max-width: 60rem;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.blog p {
+  margin-bottom: 1rem;
+}
+
 
 @media (max-width: 1100px) {
 
-  .hero-image {
-    max-width: 49%;
+  .insta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
   }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about .full-width {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 680px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 
   .menu-item {
     margin: 0 2rem 0 0;
   }
 
-  .main-menu {
-    margin: 0;
+  .main-navigation {
+    margin: 0rem 1rem;
+    padding: 0.5rem;
   }
 
-  .hero-image,
-  .rel-image {
+  .feature-image {
     max-width: 100%;
     height: 100%;
-  }
-
-  .insta-pic {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
   }
 
   .contact a {
     font-size: 1.5rem;
   }
 
+  .site-content {
+      margin: 10rem 0.5rem 0.5rem 0.5rem;
+  }
+
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
 
-  .hero-image,
+  .main-menu {
+    margin: 0;
+  }
+
   .rel-image {
     max-width: 100%;
     height: 100%;
   }
+
+  .insta-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .site-content {
+      margin: 7rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+    letter-spacing: 0px;
+  }
+
 }
